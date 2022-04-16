@@ -1,0 +1,20 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@font-face{
+    font-family: 'GothamRoundedMedium';
+    src: url(fonts/gothamroundedmedium_21022.ttf);
+    font-family: 'GothamRoundedBook';
+    src: url('fonts/gothamroundedbook_21018.ttf');
+    font-family: 'GothamRoundedLight';
+    src: url(fonts/gothamroundedlight_21020.ttf);
+}
+:root{
+    --light-blue: #4acaff;
+    --search-color: #c7c7c7;
+    --search-border: #e2e2e2;
+    --blue: #3fb3e3;
+    --lighty-blue: #79d8ff;
+    --dirty-blue: #7e9dac;
+    --gray: #585858;
+    --background: #131c25;
+    --copyright: #bdbcbc;
+}
