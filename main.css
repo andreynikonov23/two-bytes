@@ -308,12 +308,15 @@ section{
     color: #2a7090;
     font-weight: bolder;
 }
+.tweet{
+    color: #186487;
+}
 .facebook{
     display: inline-block;
 }
 .like{
     display: inline-block;
-    color: #424242;
+    color: #3b5998;
 }
 .count{
     border: 1px solid #cee3f0;
@@ -321,8 +324,12 @@ section{
     padding: 5px;
     display: inline-block;
 }
-.last{
-    border: 1px solid var(--gray);
+.count-last{
+    border: 1px solid #d1d1d1;
+    width:fit-content;
+    padding: 5px;
+    display: inline-block;
+    
 }
 .tail{
     display: inline-block;
@@ -338,6 +345,9 @@ section{
     border-top: 6px solid transparent;
     position: relative;
     left: 9px;
+}
+.gray{
+    border-right: 6px solid #d1d1d1;
 }
 .border-count:last-child{
     border-right: var(--gray);
