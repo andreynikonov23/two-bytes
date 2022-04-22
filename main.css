@@ -31,6 +31,32 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.burger-block{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    padding: 16px;
+    justify-content: right;
+}
+.burger{
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    display: none;
+}
+.burger-button{
+    cursor: pointer;
+    height: 25px;
+}
+.top{
+    position: relative;
+    bottom: 5px;
+    
+}
+.bottom{
+    top: 25px;
+}
 .container{
     width: 80%;
     margin: 0 auto;
@@ -57,17 +83,18 @@ nav{
     color: white;
 }
 ul{
-    display: block;
+    display: flex;
     padding: 0;
+    justify-content: space-between;
+    grid-column-gap: 22px;
 }
 ul li{
     margin-left: 0;
-    display: inline-block;
+    display: block;
     font-family: 'GothamRoundedMedium', sans-serif;
     font-weight: bolder;
     color: white;
     font-size: 14px;
-    width: auto;
     height: 40px;
     line-height: 40px;
     cursor: pointer;
@@ -113,10 +140,16 @@ ul li:hover{
     margin-right: 13px;
 }
 .name-checkbox{
+    display: inline-block;
     font-family: 'GothamRoundedBook', sans-serif;
     font-style: italic;
     font-size: 13px;
     color: white;
+}
+.nc-block{
+    width: 80%;
+    position: absolute;
+    margin-top: 5px;
 }
 .checkbox-div{
     display: inline-block;
@@ -373,63 +406,65 @@ section{
 
 
 
-@media (max-width: 895px){
+@media (max-width: 973px){
     nav{
         display: block;
+        margin-bottom: 100px;
     }
 }
-@media (max-width: 646px){
-    ul li:not(:last-child){
-        margin-right: 12px;
-    }
-}
-@media (max-width: 606px){
-    ul li{
-        font-size: 13px;
-    }
-}
-@media(max-width: 571px){
-    ul li{
-        font-size: 10px;
-    }
-    ul li:not(:last-child){
-        margin-right: 22px;
-    }
-    .block{
-        grid-column-gap: 40px;
-    }
-}
-@media(max-width: 529px){
-    ul li:not(:last-child){
-        margin-right: 12px;
-    }
-}
-@media (max-width: 830px){
-    nav{
-        display: block;
+@media (max-width: 739px){
+    .container{
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 26px;
+        margin: 0;
     }
     .logo{
         text-align: center;
-        margin-bottom: 50px;
-    }
-    nav{
-        margin-bottom: 100px;
-    }
-    .block{
-        margin-bottom: 0px;
-    }
-    select{
-        padding-left: 0;
     }
 }
-@media (max-width: 737px){
+@media (max-width: 698px){
     .parametres{
         display: block;
     }
     .checkboxes{
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     select{
-        width: 100%;
+        width: 70%;
+    }
+}
+@media (max-width: 635px){
+    ul {
+        grid-column-gap: 0;
+    }
+}
+@media (max-width: 523px){
+    .container{
+        padding-top: 30px;
+    }
+    ul{
+        display: none;
+    }
+    .block{
+        grid-column-gap: 30px;
+    }
+    header{
+        height: 600px;
+    }
+    .burger{
+        display: block;
+    }
+}
+@media (max-width: 420px){
+    .block{
+        grid-column-gap: 15px;
+    }
+    .search-button{
+        width: 50px;
+        font-size: 9px;
+    }
+    .button-text{
+        display: none;
     }
 }
