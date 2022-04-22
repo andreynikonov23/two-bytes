@@ -271,7 +271,7 @@ section{
     padding-bottom: 170px;
 }
 .section-head{
-    width: 30%;
+    width: 365px;
     margin: 0 auto;
     font-family: 'GothamRoundedBook', sans-serif;
     font-size: 18px;
@@ -281,7 +281,7 @@ section{
 .insert{
     display: flex;
     justify-content: space-between;
-    width: 24%;
+    width: 325px;
     margin: 0 auto;
     height: 55px;
     line-height: 55px;
@@ -412,7 +412,20 @@ section{
         margin-bottom: 100px;
     }
 }
-@media (max-width: 739px){
+@media(max-width: 852px){
+    .footer-head{
+        padding-left: 16px;
+    }
+    .last-block{
+        display: block;
+        padding-left: 16px;
+    }
+    .copyright{
+        margin-bottom: 20px;
+    }
+    
+}
+@media (max-width: 756px){
     .container{
         width: 100%;
         padding-left: 16px;
@@ -439,7 +452,7 @@ section{
         grid-column-gap: 0;
     }
 }
-@media (max-width: 523px){
+@media (max-width: 540px){
     .container{
         padding-top: 30px;
     }
@@ -456,6 +469,14 @@ section{
         display: block;
     }
 }
+@media (max-width: 480px){
+    .footer-head{
+        font-size: 9px;
+    }
+    .copyright{
+        font-size: 9px;
+    }
+}
 @media (max-width: 420px){
     .block{
         grid-column-gap: 15px;
@@ -466,5 +487,24 @@ section{
     }
     .button-text{
         display: none;
+    }
+    .main-heading{
+        font-size: 35px;
+    }
+    
+}
+@media (max-width: 379px){
+    .insert{
+        width: 200px;
+    }
+    .insert-email{
+        font-size: 9px;
+    }
+    .insert-email::placeholder{
+        font-size: 9px;
+    }
+    .section-head{
+        font-size: 10px;
+        width: 200px;
     }
 }
